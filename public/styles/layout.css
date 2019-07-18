@@ -13,11 +13,23 @@ html {
 /*
  * Global layout stuff
  */
-
+ 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  overflow: auto;
+  
+}
+
+.container {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  margin-left: 50px;
+  margin-top: 400px;
+
 }
 
 /*

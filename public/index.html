@@ -6,27 +6,57 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700i&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
 
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav >
+      <Div>
+        <span id="logo">tweeter</span>
+      </Div>
     </nav>
 
+    <header>
+
+      <div #profileImage>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>Your Name</h2>
+      </div>
+
+  </header>
+
     <!-- Page-specific (main) content here -->
+    <div class='tweets'> </div> 
     <main class="container">
+        <h3>Your Name</h3>
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form id="tweetSubmit">
+            <textarea id="tweeterTextCounter" name="text" action="/tweets/" method="get" placeholder="What are you humming about?"></textarea>
+            <input type="submit" value="Tweet">
+            <span id="counter" class="counter"></span>
+          </form>
+        </section>
     </main>
+    
 
   </body>
 </html>
