@@ -5,7 +5,11 @@ $(document).ready(function() {
     $('#counter').html(maxLength)
     let textLength = $('#tweeterTextCounter').val().length;
     let remaining = maxLength - textLength;
-    $('#counter').html(remaining)
-  });     
+    if (remaining === 0) {
+      $('#counter').html('Max!');
+    } else {
+    $('#counter').html(remaining);
+    }
+  });    
 });
  

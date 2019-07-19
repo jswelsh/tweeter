@@ -50,7 +50,7 @@
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <form id="tweetSubmit">
-            <textarea id="tweeterTextCounter" name="text" action="/tweets/" method="get" placeholder="What are you humming about?"></textarea>
+            <textarea id="tweeterTextCounter" name="text" action="/tweets/" method="get" maxlength="240" placeholder="What are you humming about?"></textarea>
             <input type="submit" value="Tweet">
             <span id="counter" class="counter"></span>
           </form>
