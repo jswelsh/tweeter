@@ -27,8 +27,63 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #c5c5c5;
+  background-color: #f9f9fa;
 }
+.new-tweet {
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+#tweeterText {
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  font-weight: bold;
+  border-color: rgb(77, 74, 74);
+}
+
+#tweetButton{
+  background-color: rgb(11, 68, 122); /* Green */
+  margin-top: 15px;
+  border: none;
+  font-size: 32px;
+  color: white;
+}
+#counter{
+  font-family: 'Bungee', sans-serif;
+}
+
+.tweetBox {
+  width: 90%;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(77, 74, 74);
+}
+.rightSide{
+  float: right;
+}
+.tweetBox:hover{
+  box-shadow: 10px 10px 5px rgb(69, 67, 107);
+
+}
+.tweetBox:hover .hide{
+  visibility: visible;
+  float: right
+}
+
+.hide{
+  visibility: hidden;
+}
+
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
