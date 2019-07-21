@@ -1,10 +1,12 @@
 #logo { 
+  float: left;
   font-family: 'Bungee', sans-serif;
 
 }
 
 nav {
   position: fixed;
+  font-family: 'Source Sans Pro', sans-serif;
   top: 0;
   height: 120px;
   width: 100%;
@@ -12,5 +14,8 @@ nav {
   color: #FFFFFF ;
   background-color: #4056A1;
   padding: 1.5em;
+}
+.navi {
+  float: right;
 }
   
