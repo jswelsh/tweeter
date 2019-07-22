@@ -28,8 +28,9 @@ $(document).ready(()=>{
     let tweetArticle =
   `
     <header>
-      <small> ${tweet.user.name} </small> 
+    <h2> ${tweet.user.name} </h2> 
       <small class="hide" class="rightSide"> ${tweet.user.handle}</small>
+      <img src= ${tweet.user.avatars}>
     </header>
     <p>${tweet.content.text}</p>
     <footer>
@@ -47,8 +48,9 @@ $(document).ready(()=>{
       const tweet = (document.forms['tweetInputField']['tweeterText'].value);
       if (validTweetValidator(tweet)) {
         console.log(tweet)
-        $.post('', $('.tweetSubmit').serialize(), (data) => {
+        $.post('/tweets', $('.tweetSubmit').serialize(), (data) => {
           console.log(data);
+          loadTweets();
         });
       }
     });
@@ -61,6 +63,17 @@ $(document).ready(()=>{
     });
   };
   loadTweets();
+/*   function loadTweets(size){
+    $.ajax('http://localhost:8080/tweets', {method: 'GET'})
+    .then(function (tweets) {
+      if (size) {
+        renderTweets(tweets.slice(tweets.length-1));
+      } else {
+        renderTweets(tweets);
+      }
+    });
+  };
+  loadTweets(); */
 
 });
 
