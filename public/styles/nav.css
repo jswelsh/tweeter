@@ -12,10 +12,53 @@ nav {
   width: 100%;
   z-index: 7;
   color: #FFFFFF ;
-  background-color: #4056A1;
+  background-color:#aa7d7e;
   padding: 1.5em;
 }
 .navi {
   float: right;
 }
   
+.newTweetButton {   
+
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 5%;
+  background-image: url("/images/chev.png");
+  background-size: cover; 
+  background-position: center; 
+  display: inline-block;
+  border: none; 
+  padding: 10px;
+  width: 30px;
+  height: 10px;
+  transition: all 0.5s; 
+  cursor: pointer;  
+
+}
+
+
+</script>
+<style> 
+#panel, #flip {
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+}
+
+#panel {
+padding: 50px;
+display: none;
+}
+
+
+.newTweetButton:hover {
+  
+}
+
+.newTweetButton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(13px);
+}
+

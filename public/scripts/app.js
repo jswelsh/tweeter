@@ -60,11 +60,20 @@ $(document).ready(()=>{
     });
   });
   
+  $(function() {
+    const $button =$(".newTweetButton");
+    
+    $button.click(function(){
+      event.preventDefault();
+      $(".new-tweet").slideToggle("slow");
+  });
+  });
+  
 /*   const loadTweets = function(size) {
     $.getJSON('http://localhost:8080/tweets', (tweetJSON) => {
       renderTweets(tweetJSON);
       //console.error(tweetJSON, "test");
-    });
+    });DownDown
   };
   loadTweets(); */
   function loadTweets(size){
