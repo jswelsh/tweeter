@@ -18,7 +18,7 @@ $(document).ready(()=>{
     tweets.forEach(function(element) {
       console.log(element);
       let $tweet = createTweetElement(element);
-      $('.tweets').append($tweet.html());
+      $('.tweets').append($tweet);
     });
   
   // calls createTweetElement for each tweet
@@ -26,16 +26,19 @@ $(document).ready(()=>{
   };
   
   const createTweetElement = function(tweet) {
-    let $tweet = $('<article>').addClass('tweet');
+    let $tweet = $('<article>').addClass('tweetBox');
     let tweetArticle =
-    `<div>
-      <h2>
-        ${tweet.user.name}
-      </h2>
-      <h2>
-        ${tweet.content.text}
-      </h2>
-    </div>`;
+  `
+    <header>
+      <small> ${tweet.user.name} </small> 
+      <small class="hide" class="rightSide"> ${tweet.user.handle}</small>
+    </header>
+    <p>${tweet.content.text}</p>
+    <footer>
+        <time>${tweet.content.created_at}</time>
+      <small class="rightSide"> links </small>
+    </footer>
+  </article>`;
     return $tweet.html(tweetArticle);
   };
   $(function() {
