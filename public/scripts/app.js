@@ -3,12 +3,20 @@ $(document).ready(()=>{
 
   const validTweetValidator = function(tweetContents) {
     if (tweetContents === "") {
-      alert("Your tweet has no chirp, flex more chirp!");
+      //$('.warning').css('visibility', 'visible');
+      $('.warning').slideDown("slow");
+      //alert("Your tweet has no chirp, flex more chirp!");
+      $('.warning').text('Your tweet has no chirp, flex more chirp!');
       return false;
     } else if ((tweetContents.length) > 140) {
-      alert("Your tweet has to much chirp, flex less chirp!");
+      //$('.warning').css('visibility', 'visible');
+      $('.warning').slideDown("slow");
+      //alert("Your tweet has no chirp, flex more chirp!");
+      $('.warning').text('Your tweet has to much chirp, flex less chirp!');
+      //alert("Your tweet has to much chirp, flex less chirp!");
       return false;
     }
+    $('.warning').slideUp("slow");
     return true;
   };
   
@@ -25,7 +33,7 @@ $(document).ready(()=>{
   
   const createTweetElement = function(tweet) {
     let $tweet = $('<article>').addClass('tweetBox');
-    let tweetText = $("<div>").text(tweet.content.text);
+   // let tweetText = (tweet.content.text);
     let tweetArticle =
   `
     <header>
@@ -33,12 +41,13 @@ $(document).ready(()=>{
       <small class="hide" class="rightSide"> ${tweet.user.handle}</small>
       <img src= ${tweet.user.avatars}>
     </header>
-    <p>${tweetText}</p>
+    <p>${tweet.content.text}</p>
     <footer>
+
         <time>${tweet.content.created_at}</time>
       <small class="rightSide"> links </small>
     </footer>
-  </article>`;
+    </article>`;
     return $tweet.html(tweetArticle);
   };
   
@@ -46,20 +55,17 @@ $(document).ready(()=>{
     const $button = $('.tweetSubmit');
     $button.on('submit', (event) => {
       event.preventDefault();
-      const tweet = $("<div>").text('tweeterText');
-      //const tweet = (document.forms['tweetInputField']['tweeterText'].value);
-      console.log(tweet, "1")
-      console.log($('tweeterText'), "2")
+      const tweet = (document.forms['tweetInputField']['tweeterText'].value);
+
       if (validTweetValidator(tweet)) {
-        console.log(tweet)
         $.post('/tweets', $('.tweetSubmit').serialize(), (data) => {
-          console.log(data);
+      
           loadTweets(1);
         });
       }
     });
   });
-  
+
   $(function() {
     const $button =$(".newTweetButton");
     
@@ -73,7 +79,7 @@ $(document).ready(()=>{
     $.getJSON('http://localhost:8080/tweets', (tweetJSON) => {
       renderTweets(tweetJSON);
       //console.error(tweetJSON, "test");
-    });DownDown
+    });
   };
   loadTweets(); */
   function loadTweets(size){

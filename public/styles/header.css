@@ -4,7 +4,7 @@
   margin-top: 120px;
   height: 400px;
   width: 100%;
-  background-color: #b8b790; 
+  background-color: rgb(161, 191, 219); 
   background-image: url("/images/3px-tile.png");
   display: flex;
   flex-direction: column;

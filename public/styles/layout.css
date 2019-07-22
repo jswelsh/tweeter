@@ -48,9 +48,12 @@ body {
 }
 
 #tweetButton{
-  background-color: rgb(11, 68, 122); /* Green */
+  background-color:#746363;
+  border-color: rgb(100, 98, 98);
+  border-style: solid; 
+  border-width: 3px;
   margin-top: 15px;
-  border: none;
+
   font-size: 32px;
   color: white;
 }
@@ -82,6 +85,15 @@ body {
 
 .hide{
   visibility: hidden;
+}
+.warning {
+  border-style: solid;  
+  border-width: 5px; 
+  border-color: #545149;
+  color: white;
+  background-color: #aa7d7e;
+  display: none;
+  text-align: center;
 }
 
 
