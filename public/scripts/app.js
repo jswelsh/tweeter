@@ -25,6 +25,7 @@ $(document).ready(()=>{
   
   const createTweetElement = function(tweet) {
     let $tweet = $('<article>').addClass('tweetBox');
+    let tweetText = $("<div>").text(tweet.content.text);
     let tweetArticle =
   `
     <header>
@@ -32,7 +33,7 @@ $(document).ready(()=>{
       <small class="hide" class="rightSide"> ${tweet.user.handle}</small>
       <img src= ${tweet.user.avatars}>
     </header>
-    <p>${tweet.content.text}</p>
+    <p>${tweetText}</p>
     <footer>
         <time>${tweet.content.created_at}</time>
       <small class="rightSide"> links </small>
@@ -45,35 +46,37 @@ $(document).ready(()=>{
     const $button = $('.tweetSubmit');
     $button.on('submit', (event) => {
       event.preventDefault();
-      const tweet = (document.forms['tweetInputField']['tweeterText'].value);
+      const tweet = $("<div>").text('tweeterText');
+      //const tweet = (document.forms['tweetInputField']['tweeterText'].value);
+      console.log(tweet, "1")
+      console.log($('tweeterText'), "2")
       if (validTweetValidator(tweet)) {
         console.log(tweet)
         $.post('/tweets', $('.tweetSubmit').serialize(), (data) => {
           console.log(data);
-          loadTweets();
+          loadTweets(1);
         });
       }
     });
   });
   
-  const loadTweets = function() {
+/*   const loadTweets = function(size) {
     $.getJSON('http://localhost:8080/tweets', (tweetJSON) => {
       renderTweets(tweetJSON);
       //console.error(tweetJSON, "test");
     });
   };
-  loadTweets();
-/*   function loadTweets(size){
-    $.ajax('http://localhost:8080/tweets', {method: 'GET'})
-    .then(function (tweets) {
+  loadTweets(); */
+  function loadTweets(size){
+    $.get('http://localhost:8080/tweets', (function (tweets) {
       if (size) {
         renderTweets(tweets.slice(tweets.length-1));
       } else {
         renderTweets(tweets);
       }
-    });
+    }));
   };
-  loadTweets(); */
+  loadTweets();
 
 });
 
