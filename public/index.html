@@ -51,10 +51,10 @@
 
     <main class="container">
         <section class="new-tweet">
-          <form class="tweetSubmit">
-            <textarea id="tweeterText" name="text" action="/tweets/" method="get" maxlength="240" placeholder="What are you humming about?"></textarea>
+          <form id="tweetInputField" class="tweetSubmit" action="/tweets/" method="post">
+            <textarea id="tweeterText" name="text" maxlength="240" placeholder="What are you humming about?"></textarea>
           </form>
-          <input id="tweetButton" type="submit" form="tweetSubmit" value="Tweet">
+          <input id="tweetButton" type="submit" form="tweetInputField" value="Tweet">
           <span id="counter" class="rightSide"></span>
         </section>
         <article class="tweetBox">

@@ -1,8 +1,7 @@
 // Fake data taken from initial-tweets.json
 $(document).ready(()=>{
 
-  const validTweetValidator = function() {
-    let tweetContents = document.forms['tweetSubmit']['tweeterTextCounter'].value;
+  const validTweetValidator = function(tweetContents) {
     if (tweetContents === "") {
       alert("Your tweet has no chirp, flex more chirp!");
       return false;
@@ -16,7 +15,6 @@ $(document).ready(()=>{
   const renderTweets = function(tweets) {
     // loops through tweets
     tweets.forEach(function(element) {
-      console.log(element);
       let $tweet = createTweetElement(element);
       $('.tweets').append($tweet);
     });
@@ -41,14 +39,15 @@ $(document).ready(()=>{
   </article>`;
     return $tweet.html(tweetArticle);
   };
+  
   $(function() {
-    const $button = $('#tweetSubmit');
+    const $button = $('.tweetSubmit');
     $button.on('submit', (event) => {
       event.preventDefault();
-      //console.log($('#tweetSubmit').serialize());
-      console.log($('#tweetSubmit'));
-      if (validTweetValidator()) {
-        $.post($('#tweetSubmit').serialize(), (data) => {
+      const tweet = (document.forms['tweetInputField']['tweeterText'].value);
+      if (validTweetValidator(tweet)) {
+        console.log(tweet)
+        $.post('', $('.tweetSubmit').serialize(), (data) => {
           console.log(data);
         });
       }
