@@ -52,8 +52,8 @@ body {
   border-color: rgb(100, 98, 98);
   border-style: solid; 
   border-width: 3px;
+  margin: 0 auto;
   margin-top: 15px;
-
   font-size: 32px;
   color: white;
 }

@@ -17,13 +17,20 @@ nav {
 }
 .navi {
   float: right;
+  height: 100%;
+  width: 20%;
 }
-  
+.newTweet{
+
+  position: relative;
+ 
+}
 .newTweetButton {   
 
-  position: fixed;
-  margin-top: 1%;
-  margin-left: 5%;
+/*   margin: 0 auto; */
+  position: absolute;
+/*   margin-top: 0.5%;
+  margin-left: 5%;  */
   background-image: url("/images/chev.png");
   background-size: cover; 
   background-position: center; 
@@ -37,9 +44,6 @@ nav {
 
 }
 
-
-</script>
-<style> 
 #panel, #flip {
 padding: 5px;
 text-align: center;
