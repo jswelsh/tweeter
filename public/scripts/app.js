@@ -33,16 +33,18 @@ $(document).ready(()=>{
   const createTweetElement = function(tweet) {
     let $tweet = $('<article>').addClass('tweetBox');
     let safeText = escape(tweet.content.text)    
+    console.log(tweet);
     let tweetArticle =
   `
+  <small class="hide" class="rightSide"> ${tweet.user.handle}</small>
     <header>
       <h2> ${tweet.user.name} </h2> 
-      <small class="hide" class="rightSide"> ${tweet.user.handle}</small>
-      <img src= ${tweet.user.avatars}>
     </header>
+      
+      <img src= ${tweet.user.avatars}>
       <p>${safeText}</p>
     <footer>
-      <time>${tweet.content.created_at}</time>
+      <time>${tweet.created_at}</time>
       <small class="rightSide"> links </small>
     </footer>
     </article>`;
@@ -63,14 +65,6 @@ $(document).ready(()=>{
     });
   });
 
-  $(function() {
-    const $button =$(".newTweetButton"); 
-    $button.click(function(){
-      event.preventDefault();
-      $(".new-tweet").slideToggle("slow");
-  });
-  });
-  
   function loadTweets(size){
     $.get('http://localhost:8080/tweets', (function (tweets) {
       if (size) {
@@ -83,4 +77,5 @@ $(document).ready(()=>{
   loadTweets();
 });
 
+  
 

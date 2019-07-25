@@ -96,8 +96,16 @@ body {
   text-align: center;
 }
 
+@media (min-width: 1340px) {
+  .container {
+    width: 66.7%;
+    float: right;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1339px) {
+  .container {
 
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+    width: 66.7%;
+    float: right;
+  }
+}

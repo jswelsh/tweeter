@@ -17,11 +17,11 @@ nav {
 .navRight{
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 1px;
+  margin-top: 20px;
 }
 .newTweetButton {  
-  color: #rgb(77, 74, 74);
+  color: rgb(77, 74, 74);
   outline: none;
   background: transparent;
   border: transparent;
@@ -46,38 +46,10 @@ display: none;
   transform: translateY(6px);
 }
 
-/* nav {
-  position: fixed;
-  font-family: 'Source Sans Pro', sans-serif;
-  top: 0;
-  height: 120px;
-  width: 100%;
-  z-index: 7;
-  color: #FFFFFF ;
-  background-color:#aa7d7e;
-  padding: 1.5em;
-}
-.navi {
-  float: right;
-  height: 100%;
-  width: 20%;
-} 
-.newTweetButton {   
+@media (max-width: 1020px) {
+  nav {
+    background-color: rgb(161, 191, 219); 
+    background-image: url("/images/3px-tile.png");
 
-   margin: 0 auto; 
-  position: absolute;
-  margin-top: 0.5%;
-  margin-left: 5%;  
-  background-image: url("/images/chev.png");
-  background-size: cover; 
-  background-position: center; 
-  display: inline-block;
-  border: none; 
-  padding: 10px;
-  width: 30px;
-  height: 10px;
-  transition: all 0.5s; 
-  cursor: pointer;  
-
+  }
 }
-*/
