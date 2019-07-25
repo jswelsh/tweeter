@@ -50,7 +50,7 @@ $(document).ready(()=>{
     </article>`;
     return $tweet.html(tweetArticle);
   };
-  
+  //tracks tweets and updates them
   $(function() {
     const $button = $('.tweetSubmit');
     $button.on('submit', (event) => {
@@ -63,6 +63,10 @@ $(document).ready(()=>{
         });
       }
     });
+  });
+  //registers click to hide tweet field button
+  $("button").click(function(){
+    $(".new-tweet").toggle(1000);
   });
 
   function loadTweets(size){
