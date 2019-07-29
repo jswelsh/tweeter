@@ -58,6 +58,7 @@ $(document).ready(()=>{
   //tracks tweets and updates them
   $(function() {
     const $button = $('.tweetSubmit');
+    //catches user input
     $button.on('submit', (event) => {
       event.preventDefault();
       const tweet = (document.forms['tweetInputField']['tweeterText'].value);
