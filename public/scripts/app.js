@@ -19,12 +19,12 @@ $(document).ready(()=>{
     $('.warning').slideUp("slow");
     return true;
   };
-  //xss sanatization of user input text
+  //escapes input that can cause crosssite scripting
   const escape =  function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
-  }
+  };
   const renderTweets = function(tweets) {
     // loops through tweets to render
     tweets.forEach(function(element) {

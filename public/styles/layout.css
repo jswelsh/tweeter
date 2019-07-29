@@ -96,6 +96,20 @@ body {
   text-align: center;
 }
 
+.tweets {
+  /* breaks long strings and wraps
+  them to fit within container */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
 @media (min-width: 1340px) {
   .container {
     width: 66.7%;
