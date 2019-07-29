@@ -9,16 +9,13 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
   background-color: #9092b8;
   font-size: 24px;
   overflow: auto;
-  
 }
-
 .container {
   width: 90%;
   margin-left: auto;
@@ -41,7 +38,6 @@ body {
   font-weight: bold;
   border-color: rgb(77, 74, 74);
 }
-
 #tweetButton{
   background-color:#746363;
   border-color: rgb(100, 98, 98);
@@ -55,7 +51,6 @@ body {
 #counter{
   font-family: 'Bungee', sans-serif;
 }
-
 .tweetBox {
   width: 90%;
   padding: 40px;
@@ -111,7 +106,6 @@ body {
 }
 @media (min-width: 1020px) and (max-width: 1339px) {
   .container {
-
     width: 66.7%;
     float: right;
   }
