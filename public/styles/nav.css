@@ -2,7 +2,6 @@
   float: left;
   font-family: 'Bungee', sans-serif;
 }
-
 nav {
   font-family: 'Source Sans Pro', sans-serif;
   z-index: 7;
@@ -13,7 +12,6 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
 .navRight{
   margin-left: auto;
   margin-right: auto;
@@ -28,24 +26,20 @@ nav {
   width: 100%;
   margin: auto;
 }
-
 #panel, #flip {
 padding: 5px;
 text-align: center;
 background-color: #e5eecc;
 border: solid 1px #c3c3c3;
 }
-
 #panel {
 padding: 50px;
 display: none;
 }
-
 .newTweetButton:active {
   outline: none;
   transform: translateY(6px);
 }
-
 @media (max-width: 1020px) {
   nav {
     background-color: rgb(161, 191, 219); 

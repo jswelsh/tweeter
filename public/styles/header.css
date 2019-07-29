@@ -1,6 +1,4 @@
-
 #topHeader {
-  
   height: 400px;
   width: 100%;
   background-color: rgb(161, 191, 219); 
@@ -9,13 +7,11 @@
   flex-direction: column;
   justify-content: center;
 }
-
 .userID {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px; 
 }
-
 @media (min-width: 1340px) {
   #topHeader {
     margin-left: 3%;
@@ -25,7 +21,6 @@
     float: left;
   }
 }
-
 @media (min-width: 1020px) and (max-width: 1339px) {
   #topHeader {
     margin-left: 3%;

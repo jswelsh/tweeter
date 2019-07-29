@@ -5,14 +5,14 @@ $(document).ready(function() {
   //for tweet
   $('#tweeterText').keyup('click', function() {
     let maxLength = 140;
-    $('#counter').html(maxLength)
+    $('#counter').html(maxLength);
     let textLength = $('#tweeterText').val().length;
     let remaining = maxLength - textLength;
     if (remaining < 0) {
       $('#counter').html(`<font color="red"> Max char: ${remaining}</font>`);
     } else {
-    $('#counter').html(remaining);
+      $('#counter').html(remaining);
     }
-  });    
+  });
 });
  

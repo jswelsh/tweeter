@@ -10,10 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
- 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
@@ -32,7 +28,6 @@ body {
 .new-tweet {
   margin-left: 5%;
   margin-right: 5%;
-
 }
 #tweeterText {
   color: #545149;
@@ -95,7 +90,6 @@ body {
   display: none;
   text-align: center;
 }
-
 .tweets {
   /* breaks long strings and wraps
   them to fit within container */
@@ -109,7 +103,6 @@ body {
   hyphens: auto;
 
 }
-
 @media (min-width: 1340px) {
   .container {
     width: 66.7%;

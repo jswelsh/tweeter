@@ -62,7 +62,7 @@ $(document).ready(()=>{
       event.preventDefault();
       const tweet = (document.forms['tweetInputField']['tweeterText'].value);
       if (validTweetValidator(tweet)) {
-        $.post('/tweets', $('.tweetSubmit').serialize(), (data) => {
+        $.post('/tweets', $('.tweetSubmit').serialize(), () => {
           //incase if a new tweet is submitted
           loadTweets(1);
         });
@@ -70,19 +70,19 @@ $(document).ready(()=>{
     });
   });
   //registers click to hide tweet field button
-  $("button").click(function(){
+  $("button").click(function() {
     $(".new-tweet").toggle(1000);
   });
   //grabs all stored tweets
-  function loadTweets(size){
-    $.get('http://localhost:8080/tweets', (function (tweets) {
+  function loadTweets(size) {
+    $.get('http://localhost:8080/tweets', (function(tweets) {
       if (size) {
-        renderTweets(tweets.slice(tweets.length-1));
+        renderTweets(tweets.slice(tweets.length - 1));
       } else {
         renderTweets(tweets);
       }
     }));
-  };
+  }
   loadTweets();
 });
 
