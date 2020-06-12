@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
   //character counting function, alerts user if
   //they exceed the maximum allowable char count
