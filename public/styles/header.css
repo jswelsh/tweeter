@@ -1,8 +1,8 @@
 #topHeader {
   height: 400px;
   width: 100%;
-  background-color: rgb(161, 191, 219); 
-  background-image: url("/images/3px-tile.png");
+  /* background-color: rgb(161, 191, 219);  */
+  /* background-image: url("/images/3px-tile.png"); */
   display: flex;
   flex-direction: column;
   justify-content: center;
