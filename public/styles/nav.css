@@ -6,26 +6,26 @@ nav {
   font-family: 'Source Sans Pro', sans-serif;
   z-index: 7;
   color: #FFFFFF ;
-  background-color:#3b3d50;
+  background-color:#313642;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
   justify-content: space-between;
 }
-.navRight{
+/* .navRight{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1px;
   margin-top: 20px;
-}
-.newTweetButton {  
+} */
+/* .newTweetButton {  
   color: rgb(77, 74, 74);
   outline: none;
   background: transparent;
   border: transparent;
   width: 100%;
   margin: auto;
-}
+} */
 #panel, #flip {
 padding: 5px;
 text-align: center;

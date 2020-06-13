@@ -11,8 +11,8 @@ html {
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #2f3133;
-  background-color: #3b3d50;
+  color: #d0e8ff;
+  background-color: #454c5c;
   font-size: 24px;
   overflow: auto;
 }
@@ -20,14 +20,14 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color:#26293a;
+  background-color:#282d36;
 }
 .new-tweet {
   margin-left: 5%;
   margin-right: 5%;
 }
 #tweeterText {
-  color: #545149;
+  color: #d0e8ff;
   width: 100%;
   margin-top: 50px;
   margin-left: auto;

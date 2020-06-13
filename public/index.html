@@ -21,23 +21,26 @@
     <nav>
       <!-- <div id="logo"> -->
       <h3 id="logo">tweeter</h3> 
-      <div>
+<!--       <div>
         <h4 class="navRight"> <b>Write</b> a new tweet</h4>
         <button class="newTweetButton" class="navRight"  type="submit" name=”newTweetButton”>⤋</button>   
-      </div>
+      </div> -->
     </nav>
     <!-- class='newTweetButton' -->
   <body>
     <header id="topHeader">
-      <div class='userID'>
+      <div class="userDisplayPic">
         <img src="/images/profile-hex.png"> 
       </div>
-      <div class='userID'>
+      <div class="userID">
         <h2>Username</h2>
       </div>
-    </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+      <div>
+        <!-- need to fix navRight -->
+        <!-- class="navRight"> -->
+        <!-- <button class="newTweetButton" class="newTweetText"  type="submit" name=”newTweetButton”>Write a new tweet</button> -->
+        <button class="newTweetButton" type="submit" name=”newTweetButton”>Write a new tweet</button>   
+      </div>
       <section class="new-tweet">
         <form id="tweetInputField" class="tweetSubmit" method="post" action="/tweets/" >
           <textarea id="tweeterText" name="text" maxlength="240" placeholder="What are you humming about?"></textarea>
@@ -48,6 +51,19 @@
           <strong> <i class="foo-warning"></i></strong>
         </div>
       </section>
+    </header>
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+<!--       <section class="new-tweet">
+        <form id="tweetInputField" class="tweetSubmit" method="post" action="/tweets/" >
+          <textarea id="tweeterText" name="text" maxlength="240" placeholder="What are you humming about?"></textarea>
+        </form>
+        <input id="tweetButton" type="submit" form="tweetInputField" value="Tweet">
+        <span id="counter" class="rightSide" >140</span>
+        <div class="warning">
+          <strong> <i class="foo-warning"></i></strong>
+        </div>
+      </section> -->
       <div class='tweets'> </div> 
     </main>
   </body>
