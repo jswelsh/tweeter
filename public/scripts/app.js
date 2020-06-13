@@ -2,23 +2,7 @@
 $(document).ready(()=>{
   //check each tweet submitted and ensures it does not exceed
   //max character count nor is the tweet an empty field
-  const validTweetValidator = function(tweetContents) {
-    if (tweetContents === "") {
-      //push down warning message
-      $('.warning').slideDown("slow");
-      $('.warning').text('Your tweet has no chirp, flex more chirp!');
-      return false;
-    } else if ((tweetContents.length) > 140) {
-      //push down warning message
-      $('.warning').slideDown("slow");
-      $('.warning').text('Your tweet has to much chirp, flex less chirp!');
-      return false;
-    }
-    //return warning to original position upon
-    //proper input
-    $('.warning').slideUp("slow");
-    return true;
-  };
+  
   //escapes input that can cause crosssite scripting
   const escape =  function(str) {
     let div = document.createElement('div');
@@ -55,21 +39,7 @@ $(document).ready(()=>{
     </article>`;
     return $tweet.html(tweetArticle);
   };
-  //tracks tweets and updates them
-  $(function() {
-    const $button = $('.tweetSubmit');
-    //catches user input
-    $button.on('submit', (event) => {
-      event.preventDefault();
-      const tweet = (document.forms['tweetInputField']['tweeterText'].value);
-      if (validTweetValidator(tweet)) {
-        $.post('/tweets', $('.tweetSubmit').serialize(), () => {
-          //incase if a new tweet is submitted
-          loadTweets(1);
-        });
-      }
-    });
-  });
+
   //registers click to hide tweet field button
   $("button").click(function() {
     $(".new-tweet").toggle(1000);
