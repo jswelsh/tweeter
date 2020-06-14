@@ -2,6 +2,7 @@
   height: 400px;
   width: 100%;
   margin: auto;
+  margin-top: 80px;
   /* background-color: rgb(161, 191, 219);  */
   /* background-image: url("/images/3px-tile.png"); */
   display: flex;

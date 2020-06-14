@@ -40,9 +40,3 @@ display: none;
   outline: none;
   transform: translateY(6px);
 }
-@media (max-width: 1020px) {
-  nav {
-    background-color: rgb(161, 191, 219); 
-    background-image: url("/images/3px-tile.png");
-  }
-}
