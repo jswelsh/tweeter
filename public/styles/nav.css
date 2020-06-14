@@ -6,26 +6,26 @@ nav {
   font-family: 'Source Sans Pro', sans-serif;
   z-index: 7;
   color: #FFFFFF ;
-  background-color:#aa7d7e;
+  background-color:#313642;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
   justify-content: space-between;
 }
-.navRight{
+/* .navRight{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1px;
   margin-top: 20px;
-}
-.newTweetButton {  
+} */
+/* .newTweetButton {  
   color: rgb(77, 74, 74);
   outline: none;
   background: transparent;
   border: transparent;
   width: 100%;
   margin: auto;
-}
+} */
 #panel, #flip {
 padding: 5px;
 text-align: center;
@@ -39,10 +39,4 @@ display: none;
 .newTweetButton:active {
   outline: none;
   transform: translateY(6px);
-}
-@media (max-width: 1020px) {
-  nav {
-    background-color: rgb(161, 191, 219); 
-    background-image: url("/images/3px-tile.png");
-  }
 }

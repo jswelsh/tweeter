@@ -11,52 +11,37 @@ html {
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #545149;
-  background-color: #9092b8;
+  color: #d0e8ff;
+  background-color: #454c5c;
   font-size: 24px;
   overflow: auto;
 }
 .container {
   width: 90%;
+  margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
-  background-color:#9092b8;
+  background-color:#282d36;
 }
-.new-tweet {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-#tweeterText {
-  color: #545149;
-  width: 100%;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  background: transparent;
-  border-style: solid;
-  border-width: 0px 0px 5px 0px;
-  font-weight: bold;
-  border-color: rgb(77, 74, 74);
-}
-#tweetButton{
-  background-color:#746363;
-  border-color: rgb(100, 98, 98);
-  border-style: solid; 
-  border-width: 3px;
-  margin: 0 auto;
-  margin-top: 15px;
-  font-size: 32px;
-  color: white;
-}
-#counter{
-  font-family: 'Bungee', sans-serif;
-}
+/* 
 .tweetBox {
   width: 90%;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px;
+} */
+.tweetBox {
+  width: 90%;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /* margin-top: 150px; */
   border-style: solid;
   border-width: 5px;
   border-color: rgb(77, 74, 74);
@@ -64,14 +49,14 @@ body {
 .rightSide{
   float: right;
 }
-.tweetBox:hover{
+/* .tweetBox:hover{
   box-shadow: 10px 10px 5px rgb(69, 67, 107);
 
 }
 .tweetBox:hover .hide{
   visibility: visible;
   float: right
-}
+} */
 
 .hide{
   visibility: hidden;
@@ -96,17 +81,24 @@ body {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
-
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 @media (min-width: 1340px) {
   .container {
     width: 66.7%;
     float: right;
   }
+  .container {
+    margin-top: auto;
+  }
 }
 @media (min-width: 1020px) and (max-width: 1339px) {
   .container {
     width: 66.7%;
     float: right;
+  }
+  .container {
+    margin-top: auto;
   }
 }
