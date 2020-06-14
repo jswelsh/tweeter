@@ -32,6 +32,10 @@
   margin-right: 5%;
   border-color: #d0e8ff;
 }
+.newTweetButton:active {
+  outline: none;
+  transform: translateY(6px);
+}
 .new-tweet {
   margin-left: 5%;
   margin-right: 5%;

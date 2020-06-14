@@ -1,4 +1,4 @@
-function tweetValidator(tweetContents) {
+/* function tweetValidator(tweetContents) {
   if (tweetContents === "") {
     //push down warning message
     $('.warning').slideDown("slow");
@@ -19,16 +19,5 @@ function tweetValidator(tweetContents) {
 
 //tracks tweets and updates them
 $(document).ready(()=>{
-  const $button = $('.tweetSubmit');
-  //catches user input
-  $button.on('submit', (event) => {
-    event.preventDefault();
-    const tweet = (document.forms['tweetInputField']['tweeterText'].value);
-    if (tweetValidator(tweet)) {
-      $.post('/tweets', $('.tweetSubmit').serialize(), () => {
-        //incase if a new tweet is submitted
-        loadTweets(1);
-      });
-    }
-  });
-})
+ 
+}) */

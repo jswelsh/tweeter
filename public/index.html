@@ -15,7 +15,7 @@
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
     <!-- App JS -->
     <script src="/scripts/app.js"></script>
-    <script src="/scripts/tweet_manager.js"></script>
+    <!-- <script src="/scripts/tweet_manager.js"></script> -->
     <script src="/scripts/composer-char-counter.js"></script>
     <!-- Top nav bar (fixed) --> 
     <nav>
@@ -43,7 +43,7 @@
           <button class="newTweetButton" type="submit" name=”newTweetButton”>Write a new tweet</button>   
         </div>
         <div>
-          <section class="new-tweet">
+          <section class="new-tweet" style="display: none;">
             <form id="tweetInputField" class="tweetSubmit" method="post" action="/tweets/" >
               <textarea id="tweeterText" name="text" maxlength="240" placeholder="What are you humming about?"></textarea>
             </form>

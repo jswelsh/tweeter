@@ -36,7 +36,4 @@ border: solid 1px #c3c3c3;
 padding: 50px;
 display: none;
 }
-.newTweetButton:active {
-  outline: none;
-  transform: translateY(6px);
-}
+
