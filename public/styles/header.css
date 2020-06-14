@@ -23,10 +23,12 @@
   color: #d0e8ff;
   outline: none;
   background: transparent;
-  width: 100%;
+  width: 90%;
   /* margin: auto; */
-  margin-left: auto;
-  margin-right: auto; 
+/*   margin-left: auto;
+  margin-right: auto;  */
+  margin-left: 5%;
+  margin-right: 5%;
   border-color: #d0e8ff;
 }
 .new-tweet {
@@ -34,9 +36,10 @@
   margin-right: 5%;
 }
 #tweeterText {
-  color: #d0e8ff;
+  color: #282d36;
   width: 100%;
-  margin-top: 50px;
+  height: 130px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   background-color: #d0e8ff;
@@ -62,17 +65,23 @@
   #topHeader {
     margin-left: 3%;
     margin-right: 3%;
-    margin-top:5em;
+    margin-top: 150px;
     width: 27.3%;
     float: left;
+  }
+  #tweeterText {
+    height: 200px;
   }
 }
 @media (min-width: 1020px) and (max-width: 1339px) {
   #topHeader {
     margin-left: 3%;
     margin-right: 3%;
-    margin-top:5em;
+    margin-top: 190px;
     width: 27.3%;
     float: left;
+  }
+  #tweeterText {
+    height: 280px;
   }
 }
