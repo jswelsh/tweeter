@@ -22,35 +22,17 @@ body {
   margin-right: auto;
   background-color:#282d36;
 }
-.new-tweet {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-#tweeterText {
-  color: #d0e8ff;
-  width: 100%;
-  margin-top: 50px;
+/* 
+.tweetBox {
+  width: 90%;
+  padding: 40px;
   margin-left: auto;
   margin-right: auto;
-  background: transparent;
+  margin-top: 50px;
+  border-color: transparent;
   border-style: solid;
-  border-width: 0px 0px 5px 0px;
-  font-weight: bold;
-  border-color: rgb(77, 74, 74);
-}
-#tweetButton{
-  background-color:#746363;
-  border-color: rgb(100, 98, 98);
-  border-style: solid; 
-  border-width: 3px;
-  margin: 0 auto;
-  margin-top: 15px;
-  font-size: 32px;
-  color: white;
-}
-#counter{
-  font-family: 'Bungee', sans-serif;
-}
+  border-width: 5px;
+} */
 .tweetBox {
   width: 90%;
   padding: 40px;

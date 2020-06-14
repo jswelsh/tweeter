@@ -36,21 +36,20 @@
         <h2>Username</h2>
       </div>
       <div>
-        <!-- need to fix navRight -->
-        <!-- class="navRight"> -->
-        <!-- <button class="newTweetButton" class="newTweetText"  type="submit" name=”newTweetButton”>Write a new tweet</button> -->
-        <button class="newTweetButton" type="submit" name=”newTweetButton”>Write a new tweet</button>   
-      </div>
-      <section class="new-tweet">
-        <form id="tweetInputField" class="tweetSubmit" method="post" action="/tweets/" >
-          <textarea id="tweeterText" name="text" maxlength="240" placeholder="What are you humming about?"></textarea>
-        </form>
-        <input id="tweetButton" type="submit" form="tweetInputField" value="Tweet">
-        <span id="counter" class="rightSide" >140</span>
-        <div class="warning">
-          <strong> <i class="foo-warning"></i></strong>
+
+        <div>
+          <section class="new-tweet">
+            <form id="tweetInputField" class="tweetSubmit" method="post" action="/tweets/" >
+              <textarea id="tweeterText" name="text" maxlength="240" placeholder="What are you humming about?"></textarea>
+            </form>
+            <input id="tweetButton" type="submit" form="tweetInputField" value="Tweet">
+            <span id="counter" class="rightSide" >140</span>
+            <div class="warning">
+              <strong> <i class="foo-warning"></i></strong>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
