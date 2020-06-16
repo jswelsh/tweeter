@@ -63,10 +63,12 @@ body {
 }
 .warning {
   border-style: solid;  
+  margin-top: 7px;
+
   border-width: 5px; 
-  border-color: #545149;
+  border-color: #313642;
   color: white;
-  background-color: #aa7d7e;
+  background-color: #313642;
   display: none;
   text-align: center;
 }
