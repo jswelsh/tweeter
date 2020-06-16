@@ -1,8 +1,6 @@
 
 $(document).ready(()=>{
 
-  //check each tweet submitted and ensures it does not exceed
-  //max character count nor is the tweet an empty field
   function tweetValidator(tweetContents) {
     if (tweetContents === "") {
       //push down warning message
@@ -20,7 +18,7 @@ $(document).ready(()=>{
     $('.warning').slideUp("slow");
     return true;
   };
-  
+
   //escapes input that can cause crosssite scripting
   const escape =  function(str) {
     let div = document.createElement('div');
@@ -69,13 +67,13 @@ $(document).ready(()=>{
       $.post('/tweets', $('.tweetSubmit').serialize(), () => {
         //incase if a new tweet is submitted
         loadTweets(1);
+        $(".new-tweet").toggle(1000);
       });
     }
   });
 
   //registers click to hide tweet field button
   $("button").click(function() {
-    console.log("hi")
     $(".new-tweet").toggle(1000);
   });
   //grabs all stored tweets
