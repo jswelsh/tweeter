@@ -17,6 +17,6 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ##pics
-!["screenshot of mobile width"](https://github.com/jswelsh/tweeter/blob/master/public/doc/Screenshot%20from%202019-07-25%2015-26-47.png)
-!["screenshot of mid width"](https://github.com/jswelsh/tweeter/blob/master/public/doc/Screenshot%20from%202019-07-25%2015-27-06.png)
-!["screenshot of fullwidth"](https://github.com/jswelsh/tweeter/blob/master/public/doc/Screenshot%20from%202019-07-25%2015-27-19.png)
+!["screenshot of mobile width"](https://github.com/jswelsh/tweeter/blob/master/public/doc/Screenshot%20from%202020-06-16%2011-34-12.png?raw=true)
+!["screenshot of mid width"](https://github.com/jswelsh/tweeter/blob/master/public/doc/Screenshot%20from%202020-06-16%2011-34-46.png?raw=true)
+!["screenshot of fullwidth"](https://github.com/jswelsh/tweeter/blob/master/public/doc/Screenshot%20from%202020-06-16%2011-34-34.png?raw=true)
